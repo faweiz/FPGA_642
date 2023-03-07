@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Mar  6 22:16:24 2023
+# Process ID: 3132
+# Current directory: D:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8972 D:\Tony\Downloads\RainbowGhost\Code\mircoBlaze_VC707_PCIeV3\mircoBlaze_VC707_PCIeV2.xpr
+# Log file: D:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3/vivado.log
+# Journal file: D:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3\vivado.jou
+# Running On: Tony-VPI4CJD, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 34140 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3/mircoBlaze_VC707_PCIeV2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3/mircoBlaze_VC707_PCIeV2.srcs/sources_1/bd/mb_preset/mb_preset.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3/mb_preset_wrapper.xsa

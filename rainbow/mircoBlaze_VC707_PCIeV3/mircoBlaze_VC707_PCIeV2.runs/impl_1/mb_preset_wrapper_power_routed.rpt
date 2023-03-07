@@ -1,0 +1,208 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date             : Mon Mar  6 22:58:29 2023
+| Host             : Tony-VPI4CJD running 64-bit major release  (build 9200)
+| Command          : report_power -file mb_preset_wrapper_power_routed.rpt -pb mb_preset_wrapper_power_summary_routed.pb -rpx mb_preset_wrapper_power_routed.rpx
+| Design           : mb_preset_wrapper
+| Device           : xc7vx485tffg1761-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 2.098        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.823        |
+| Device Static (W)        | 0.275        |
+| Effective TJA (C/W)      | 1.1          |
+| Max Ambient (C)          | 82.6         |
+| Junction Temperature (C) | 27.4         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.123 |       23 |       --- |             --- |
+| Slice Logic              |     0.049 |    51889 |       --- |             --- |
+|   LUT as Logic           |     0.038 |    21341 |    303600 |            7.03 |
+|   CARRY4                 |     0.006 |     1034 |     75900 |            1.36 |
+|   LUT as Distributed RAM |     0.003 |      850 |    130800 |            0.65 |
+|   Register               |     0.002 |    20026 |    607200 |            3.30 |
+|   LUT as Shift Register  |    <0.001 |      764 |    130800 |            0.58 |
+|   F7/F8 Muxes            |    <0.001 |      415 |    303600 |            0.14 |
+|   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
+|   Others                 |     0.000 |     1330 |       --- |             --- |
+|   BUFR                   |     0.000 |        1 |       224 |            0.45 |
+| Signals                  |     0.065 |    38990 |       --- |             --- |
+| Block RAM                |     0.040 |       53 |      1030 |            5.15 |
+| MMCM                     |     0.215 |        2 |        14 |           14.29 |
+| DSPs                     |     0.002 |        3 |      2800 |            0.11 |
+| I/O                      |     0.017 |       84 |       700 |           12.00 |
+| GTX                      |     1.253 |        4 |        28 |           14.29 |
+| Hard IPs                 |     0.058 |        1 |       --- |             --- |
+|   PCIE                   |     0.058 |        1 |         4 |           25.00 |
+| Static Power             |     0.275 |          |           |                 |
+| Total                    |     2.098 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     0.634 |       0.486 |      0.148 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.159 |       0.121 |      0.038 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.006 |       0.005 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.008 |       0.003 |      0.005 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.644 |       0.637 |      0.007 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.385 |       0.377 |      0.008 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.010 |       0.010 |      0.000 |       NA    | Unspecified | NA         |
+| MGTZVccl  |       1.075 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTZAVcc  |       1.075 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTZVcch  |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.1                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 2.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                       | Domain                                                                                                                                                                                                                                      | Constraint (ns) |
++-------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_125mhz                                                  | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_125mhz                  |             8.0 |
+| clk_125mhz_mux_X1Y0                                         | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1_0  |             4.0 |
+| clk_250mhz                                                  | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/clk_250mhz                  |             4.0 |
+| clk_250mhz_mux_X1Y0                                         | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1_0  |             4.0 |
+| clk_out1_mb_preset_clk_wiz_1_0                              | mb_preset_i/clk_wiz_1/inst/clk_out1_mb_preset_clk_wiz_1_0                                                                                                                                                                                   |            10.0 |
+| clkfbout_mb_preset_clk_wiz_1_0                              | mb_preset_i/clk_wiz_1/inst/clkfbout_mb_preset_clk_wiz_1_0                                                                                                                                                                                   |             5.0 |
+| mb_preset_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK   | mb_preset_i/mdm_1/U0/Use_E2.BSCAN_I/DRCK                                                                                                                                                                                                    |            33.3 |
+| mb_preset_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE | mb_preset_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0                                                                                                                                                                                            |            33.3 |
+| mmcm_fb                                                     | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_fb                     |            10.0 |
+| oobclk_125mhz_master_lane0_X1Y0                             | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_user_i/USER_OOBCLK                    |            16.0 |
+| oobclk_125mhz_master_lane1_X1Y0                             | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[1].pipe_user_i/USER_OOBCLK                    |            16.0 |
+| oobclk_125mhz_master_lane2_X1Y0                             | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[2].pipe_user_i/USER_OOBCLK                    |            16.0 |
+| oobclk_125mhz_master_lane3_X1Y0                             | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[3].pipe_user_i/USER_OOBCLK                    |            16.0 |
+| oobclk_250mhz_master_lane0_X1Y0                             | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_user_i/USER_OOBCLK                    |            16.0 |
+| oobclk_250mhz_master_lane1_X1Y0                             | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[1].pipe_user_i/USER_OOBCLK                    |            16.0 |
+| oobclk_250mhz_master_lane2_X1Y0                             | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[2].pipe_user_i/USER_OOBCLK                    |            16.0 |
+| oobclk_250mhz_master_lane3_X1Y0                             | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[3].pipe_user_i/USER_OOBCLK                    |            16.0 |
+| sys_diff_clock_clk_p                                        | sys_diff_clock_clk_p                                                                                                                                                                                                                        |             5.0 |
+| txoutclk                                                    | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i_2 |            10.0 |
+| userclk1                                                    | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/userclk1                    |             4.0 |
+| userclk2                                                    | mb_preset_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/userclk2                    |             8.0 |
++-------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------+-----------+
+| Name                        | Power (W) |
++-----------------------------+-----------+
+| mb_preset_wrapper           |     1.823 |
+|   mb_preset_i               |     1.810 |
+|     axi_bram_ctrl_0         |     0.004 |
+|       U0                    |     0.004 |
+|     axi_bram_ctrl_0_bram    |     0.007 |
+|       U0                    |     0.007 |
+|     axi_emc_0               |     0.005 |
+|       U0                    |     0.005 |
+|     axi_iic_0               |     0.002 |
+|       U0                    |     0.002 |
+|     axi_pcie_0              |     1.601 |
+|       inst                  |     1.601 |
+|     axi_smc                 |     0.031 |
+|       inst                  |     0.031 |
+|     axi_timer_0             |     0.002 |
+|       U0                    |     0.002 |
+|     clk_wiz_1               |     0.113 |
+|       inst                  |     0.113 |
+|     mdm_1                   |     0.001 |
+|       U0                    |     0.001 |
+|     microblaze_0            |     0.015 |
+|       U0                    |     0.015 |
+|     microblaze_0_axi_intc   |     0.001 |
+|       U0                    |     0.001 |
+|     microblaze_0_axi_periph |     0.023 |
+|       m08_couplers          |     0.015 |
+|       m09_couplers          |     0.003 |
+|       xbar                  |     0.003 |
++-----------------------------+-----------+
+
+

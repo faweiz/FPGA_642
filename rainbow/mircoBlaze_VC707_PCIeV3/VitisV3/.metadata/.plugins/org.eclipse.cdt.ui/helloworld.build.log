@@ -1,0 +1,26 @@
+23:25:56 **** Build of configuration Debug for project helloworld ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3/VitisV3/mb_preset_wrapper/export/mb_preset_wrapper/sw/mb_preset_wrapper/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -ID:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3/VitisV3/mb_preset_wrapper/export/mb_preset_wrapper/sw/mb_preset_wrapper/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Tony/Downloads/RainbowGhost/Code/mircoBlaze_VC707_PCIeV3/VitisV3/mb_preset_wrapper/export/mb_preset_wrapper/sw/mb_preset_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2644	    332	   3112	   6088	   17c8	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+
+23:25:57 Build Finished (took 918ms)
+
