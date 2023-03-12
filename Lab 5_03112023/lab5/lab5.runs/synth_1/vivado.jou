@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Mar  6 14:38:23 2023
+# Process ID: 17600
+# Current directory: D:/Tony/Desktop/Git/525-642/Lab 5/lab5/lab5.runs/synth_1
+# Command line: vivado.exe -log lab5_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab5_top.tcl
+# Log file: D:/Tony/Desktop/Git/525-642/Lab 5/lab5/lab5.runs/synth_1/lab5_top.vds
+# Journal file: D:/Tony/Desktop/Git/525-642/Lab 5/lab5/lab5.runs/synth_1\vivado.jou
+# Running On: Tony-VPI4CJD, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 34140 MB
+#-----------------------------------------------------------
+source lab5_top.tcl -notrace
