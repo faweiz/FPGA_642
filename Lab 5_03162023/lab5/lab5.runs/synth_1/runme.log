@@ -1,0 +1,426 @@
+
+*** Running vivado
+    with args -log lab5_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab5_top.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source lab5_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 434.066 ; gain = 96.484
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/utils_1/imports/synth_1/lab5_top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/utils_1/imports/synth_1/lab5_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top lab5_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18556
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1260.980 ; gain = 409.270
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10729] formal port 'sclk' of mode 'buffer' cannot be associated with actual port 'sclk' of mode 'out' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/pmod_accelerometer_adxl362.vhd:65]
+WARNING: [Synth 8-10729] formal port 'csb' of mode 'buffer' cannot be associated with actual port 'csb' of mode 'out' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/pmod_accelerometer_adxl362.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'lab5_top' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd:56]
+WARNING: [Synth 8-614] signal 'clk_out' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/vga_controller.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller' (0#1) [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/vga_controller.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'display_generator' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd:56]
+WARNING: [Synth 8-614] signal 'update_box' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd:99]
+WARNING: [Synth 8-614] signal 'Pattern_Green' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd:99]
+INFO: [Synth 8-3491] module 'SwitchDebouncer' declared at 'C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd:34' bound to instance 'BTN_U' of component 'SwitchDebouncer' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'SwitchDebouncer' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'SwitchDebouncer' (0#1) [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd:41]
+INFO: [Synth 8-3491] module 'SwitchDebouncer' declared at 'C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd:34' bound to instance 'BTN_D' of component 'SwitchDebouncer' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd:140]
+INFO: [Synth 8-3491] module 'SwitchDebouncer' declared at 'C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd:34' bound to instance 'BTN_L' of component 'SwitchDebouncer' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd:142]
+INFO: [Synth 8-3491] module 'SwitchDebouncer' declared at 'C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd:34' bound to instance 'BTN_R' of component 'SwitchDebouncer' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd:144]
+INFO: [Synth 8-256] done synthesizing module 'display_generator' (0#1) [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'accel_spi_rw' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/pmod_accelerometer_adxl362.vhd:46]
+	Parameter clk_freq bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'spi_controller' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/spi_master.vhd:50]
+	Parameter d_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spi_controller' (0#1) [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/spi_master.vhd:50]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/pmod_accelerometer_adxl362.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'accel_spi_rw' (0#1) [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/pmod_accelerometer_adxl362.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'display_segement' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:74]
+INFO: [Synth 8-226] default block is never used [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:90]
+INFO: [Synth 8-226] default block is never used [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:103]
+INFO: [Synth 8-226] default block is never used [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:116]
+INFO: [Synth 8-226] default block is never used [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:129]
+WARNING: [Synth 8-614] signal 'display_y_digit' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:72]
+WARNING: [Synth 8-614] signal 'display_x_digit' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:72]
+WARNING: [Synth 8-614] signal 'switch' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:72]
+WARNING: [Synth 8-614] signal 'display_ad_digit' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:72]
+WARNING: [Synth 8-614] signal 'display_x_data' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:72]
+WARNING: [Synth 8-614] signal 'display_y_data' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:72]
+WARNING: [Synth 8-614] signal 'display_z_data' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:72]
+WARNING: [Synth 8-614] signal 'display_1d_digit' is read in the process but is not in the sensitivity list [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:72]
+INFO: [Synth 8-3491] module 'seg7_hex' declared at 'C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/seg7_hex.vhd:34' bound to instance 'seg7_decode' of component 'seg7_hex' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'seg7_hex' [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/seg7_hex.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'seg7_hex' (0#1) [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/seg7_hex.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display_segement' (0#1) [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'lab5_top' (0#1) [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd:56]
+WARNING: [Synth 8-7129] Port rst in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BTNC in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[1] in module lab5_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1358.684 ; gain = 506.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1358.684 ; gain = 506.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1358.684 ; gain = 506.973
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1358.684 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[1]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[2]'. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/constrs_1/new/nexys4_contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab5_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab5_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1463.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1463.914 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'done_read_reg' in module 'accel_spi_rw'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'accel_spi_rw'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              000 | 00000000000000000000000000000000
+                 iSTATE1 |                              001 | 00000000000000000000000000000001
+                 iSTATE2 |                              010 | 00000000000000000000000000000010
+                 iSTATE3 |                              011 | 00000000000000000000000000000011
+                 iSTATE4 |                              100 | 00000000000000000000000000000100
+                  iSTATE |                              101 | 00000000000000000000000000000101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'done_read_reg' using encoding 'sequential' in module 'accel_spi_rw'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   start |                              000 |                              000
+                   pause |                              001 |                              001
+               configure |                              010 |                              010
+               read_data |                              011 |                              100
+           output_result |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'accel_spi_rw'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 4     
+	   3 Input   13 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	   3 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               15 Bit    Registers := 4     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 14    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 6     
+	   5 Input   32 Bit        Muxes := 3     
+	   2 Input   15 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 14    
+	   6 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 3     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	  11 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 75    
+	   6 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port BTNC in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module lab5_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[1] in module lab5_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    73|
+|3     |LUT1   |    38|
+|4     |LUT2   |   129|
+|5     |LUT3   |    55|
+|6     |LUT4   |    75|
+|7     |LUT5   |    60|
+|8     |LUT6   |   148|
+|9     |MUXF7  |     4|
+|10    |FDCE   |    97|
+|11    |FDPE   |     3|
+|12    |FDRE   |   277|
+|13    |IBUF   |     9|
+|14    |OBUF   |    32|
+|15    |OBUFT  |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1463.914 ; gain = 612.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1463.914 ; gain = 506.973
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1463.914 ; gain = 612.203
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1463.914 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1463.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: ce66c16
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 63 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 1463.914 ; gain = 1005.008
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.runs/synth_1/lab5_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab5_top_utilization_synth.rpt -pb lab5_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 14 17:01:11 2023...

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd" \
+"../../../../lab5.srcs/sources_1/new/fromLab4/display_generator.vhd" \
+"../../../../lab5.srcs/sources_1/new/display_segement.vhd" \
+"../../../../lab5.srcs/sources_1/new/fromLab4/vga_controller.vhd" \
+"../../../../lab5.srcs/sources_1/new/pmod_accelerometer_adxl362.vhd" \
+"../../../../lab5.srcs/sources_1/new/fromLab4/seg7_hex.vhd" \
+"../../../../lab5.srcs/sources_1/new/spi_master.vhd" \
+"../../../../lab5.srcs/sources_1/new/lab5_top.vhd" \
+
+# Do not sort compile order
+nosort

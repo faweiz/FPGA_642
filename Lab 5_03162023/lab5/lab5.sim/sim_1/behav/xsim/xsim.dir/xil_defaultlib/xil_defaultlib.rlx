@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd,1678730325,vhdl,C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd,,,display_segement,,,,,,,,
+C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd,1678578668,vhdl,,,,switchdebouncer,,,,,,,,
+C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd,1678730317,vhdl,C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd,,,display_generator,,,,,,,,
+C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/seg7_hex.vhd,1678578668,vhdl,,,,seg7_hex,,,,,,,,
+C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/vga_controller.vhd,1678578668,vhdl,C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd,,,vga_controller,,,,,,,,
+C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd,1678731889,vhdl,,,,lab5_top,,,,,,,,
+C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/pmod_accelerometer_adxl362.vhd,1678733189,vhdl,C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd,,,accelerometer_adxl362,,,,,,,,
+C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/spi_master.vhd,1678716953,vhdl,,,,spi_controller,,,,,,,,

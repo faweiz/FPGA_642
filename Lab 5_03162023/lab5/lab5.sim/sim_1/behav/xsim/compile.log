@@ -1,0 +1,16 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/SwitchDebouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SwitchDebouncer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/display_generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display_generator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/display_segement.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display_segement'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/vga_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/pmod_accelerometer_adxl362.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'accelerometer_adxl362'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/fromLab4/seg7_hex.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'seg7_hex'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/spi_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'spi_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/M38172/Downloads/642/FPGA_642-main/FPGA_642-main/Lab 5_03112023/lab5/lab5.srcs/sources_1/new/lab5_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab5_top'
